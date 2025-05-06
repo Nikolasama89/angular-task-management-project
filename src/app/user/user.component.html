@@ -1,5 +1,6 @@
 <div>
-  <button (click)="onSelectUser()">
+  <!-- tab shows selected user -->
+  <button [class.active]="selected" (click)="onSelectUser()">
     <img [src]="imagePath" [alt]="user.name">
     <span>{{ user.name }}</span>
   </button>
